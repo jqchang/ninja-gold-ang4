@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  gold:number = 0;
+
+  addGold(x:number) {
+    this.gold += x;
+    console.log("gold is now", this.gold)
+  }
 }
